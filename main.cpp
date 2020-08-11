@@ -9,8 +9,8 @@ using namespace boost::filesystem;
 int main() {
     FileWatcher fw{R"("inserisci path")", std::chrono::milliseconds(5000)};
     fw.start([] (const std::string& path_to_watch, FileStatus status) -> void {
-        //questo lo valuta sempre vero e per questo da errore ma non è così
-        if(!std::filesystem::is_regular_file(std::filesystem::path(path_to_watch))&& !std::filesystem::is_directory(std::filesystem::path(path_to_watch)) && status != FileStatus::erased) {
+        //non sono sicuro serva a qualcosa
+        if(!std::filesystem::is_regular_file(std::filesystem::path(path_to_watch))&& !std::filesystem::is_directory(std::filesystem::path(path_to_watch))) {
             return;
         }
 
