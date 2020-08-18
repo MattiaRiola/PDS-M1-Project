@@ -1,8 +1,6 @@
-//
-// Created by samu on 11/08/2020.
-//
 
 #include "FileWatcher.h"
+
 
 void FileWatcher::start(const std::function<void(std::string, FileStatus)> &action) {
     while(running_) {
@@ -34,6 +32,3 @@ void FileWatcher::start(const std::function<void(std::string, FileStatus)> &acti
         }
     }
 }
-
-
-

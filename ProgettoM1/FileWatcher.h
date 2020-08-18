@@ -1,7 +1,10 @@
 #ifndef TESTINGBOOSTLIB_FILEWATCHER_H
 #define TESTINGBOOSTLIB_FILEWATCHER_H
 
+
+
 #include <filesystem>
+#include <iostream>
 #include <chrono>
 #include <thread>
 #include <unordered_map>
@@ -16,6 +19,7 @@ public:
     std::chrono::duration<int, std::milli> delay;
     FileWatcher(const std::string& path_to_watch, std::chrono::duration<int, std::milli> delay) : path_to_watch{path_to_watch}, delay{delay} {
         for(auto &file : std::filesystem::recursive_directory_iterator(path_to_watch)) {
+            std::cout << file.path() << std::endl;
             paths_[file.path().string()] = std::filesystem::last_write_time(file);
         }
     }
@@ -27,6 +31,5 @@ private:
     bool running_ = true;
     bool contains(const std::string &key){return paths_.contains(key);}
 };
-
 
 #endif //TESTINGBOOSTLIB_FILEWATCHER_H
