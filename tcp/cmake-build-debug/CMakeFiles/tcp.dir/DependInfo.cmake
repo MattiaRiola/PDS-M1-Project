@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/samuelejakupi/CLionProjects/tcp/SimpleServer.cpp" "/Users/samuelejakupi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/tcp.dir/SimpleServer.cpp.o"
+  "/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp" "/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles/tcp.dir/SimpleServer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

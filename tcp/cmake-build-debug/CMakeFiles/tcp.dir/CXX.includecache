@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/samuelejakupi/CLionProjects/tcp/SimpleServer.cpp
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp
 iostream
 -
 fstream
@@ -14,11 +14,11 @@ fstream
 cstdio
 -
 olc_net.h
-/Users/samuelejakupi/CLionProjects/tcp/olc_net.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/olc_net.h
 boost/filesystem.hpp
-/Users/samuelejakupi/CLionProjects/tcp/boost/filesystem.hpp
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/boost/filesystem.hpp
 
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 memory
 -
 thread
@@ -46,43 +46,43 @@ boost/asio/ts/buffer.hpp
 boost/asio/ts/internet.hpp
 -
 
-/Users/samuelejakupi/CLionProjects/tcp/net_connection.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_connection.h
 net_common.h
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 net_tsqueue.h
-/Users/samuelejakupi/CLionProjects/tcp/net_tsqueue.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_tsqueue.h
 net_message.h
-/Users/samuelejakupi/CLionProjects/tcp/net_message.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_message.h
 
-/Users/samuelejakupi/CLionProjects/tcp/net_message.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_message.h
 net_common.h
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 
-/Users/samuelejakupi/CLionProjects/tcp/net_server.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_server.h
 net_common.h
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 net_tsqueue.h
-/Users/samuelejakupi/CLionProjects/tcp/net_tsqueue.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_tsqueue.h
 net_message.h
-/Users/samuelejakupi/CLionProjects/tcp/net_message.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_message.h
 net_connection.h
-/Users/samuelejakupi/CLionProjects/tcp/net_connection.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_connection.h
 
-/Users/samuelejakupi/CLionProjects/tcp/net_tsqueue.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_tsqueue.h
 net_common.h
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 
-/Users/samuelejakupi/CLionProjects/tcp/olc_net.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/olc_net.h
 net_common.h
-/Users/samuelejakupi/CLionProjects/tcp/net_common.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_common.h
 net_tsqueue.h
-/Users/samuelejakupi/CLionProjects/tcp/net_tsqueue.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_tsqueue.h
 net_message.h
-/Users/samuelejakupi/CLionProjects/tcp/net_message.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_message.h
 net_server.h
-/Users/samuelejakupi/CLionProjects/tcp/net_server.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_server.h
 net_connection.h
-/Users/samuelejakupi/CLionProjects/tcp/net_connection.h
+/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/net_connection.h
 
 /opt/homebrew/include/boost/array.hpp
 boost/detail/workaround.hpp
