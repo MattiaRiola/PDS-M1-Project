@@ -1651,3 +1651,4 @@ CMakeFiles/testclient.dir/md5.cpp.o
  /opt/homebrew/opt/openssl@1.1/include/openssl/md5.h
  /opt/homebrew/opt/openssl@1.1/include/openssl/opensslconf.h
  /opt/homebrew/opt/openssl@1.1/include/openssl/opensslv.h
+ /opt/homebrew/opt/openssl@1.1/include/openssl/sha.h

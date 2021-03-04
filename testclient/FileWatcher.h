@@ -28,7 +28,7 @@ public:
     // Keep a record of files from the base directory and their last modification time
     FileWatcher(const std::string& path_to_watch, std::chrono::duration<int, std::milli> delay) : path_to_watch{path_to_watch}, delay{delay} {
         for(auto &file : std::filesystem::recursive_directory_iterator(path_to_watch)) {
-            path[file.path().string()] = md5(file.path().string(), file.file_size());
+            path[file.path().string()] = md5(file.path().string());
         }
     }
     // ...
@@ -51,11 +51,11 @@ public:
 
                 // File creation
                 if(!contains(file.path().string())) {
-                    path[file.path().string()] = md5(file.path(), file.file_size());
+                    path[file.path().string()] = md5(file.path());
                     action(file.path().string(), FileStatus::created);
                     // File modification
                 } else {
-                    auto current_file_md5 = md5(file.path(), file.file_size());
+                    auto current_file_md5 = md5(file.path());
                     if(path[file.path().string()] != current_file_md5) {
                         path[file.path().string()] = current_file_md5;
                         action(file.path().string(), FileStatus::modified);

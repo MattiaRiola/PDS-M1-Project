@@ -10,8 +10,9 @@ class CustomClient : public olc::net::client_interface<CustomMsgTypes>
 {
 public:
     bool log = false;
+    std::string user;
 
-    void login(const std::string& a, std::string b)
+    void login(const std::string& a, const std::string& b)
     {
         olc::net::message<CustomMsgTypes> msg1;
         msg1.header.id = CustomMsgTypes::login;
@@ -41,26 +42,26 @@ public:
             msg1 << data;
             msg1 << bytes;
             msg1 << path;
+            msg1 << user;
             Send(msg1);
         }
         fclose (inFile);
         q++;
-
     }
-
 };
 
 void sendallfcb(CustomClient* c){
     p = 0;
     for(auto &file : std::filesystem::recursive_directory_iterator(pathr)) {
         p++;
-        std::string md =  md5(file.path().string(), file.file_size());
+        std::string md = md5(file.path().string());
         olc::net::message<CustomMsgTypes> fcb;
         fcb.header.id =  CustomMsgTypes::check;
         fcb << md;
         std::string s;
         s = file.path().string().erase(0, pathr.length());
         fcb << s;
+        fcb << c->user;
         c->Send(fcb);
     }
     n = p;
@@ -83,9 +84,15 @@ void attesa(CustomClient* c){
 int main()
 {
     CustomClient c;
-    c.Connect("127.0.0.1", 60000);
+    int nx = 0, nmax = 10;
+    while(nx < nmax && !c.IsConnected()) {
+        c.Connect("127.0.0.1", 60000 + nx);
+        nx++;
+    }
+
     while (c.Incoming().empty()) c.Incoming().wait();
     auto msg = c.Incoming().pop_front().msg;
+
     if(msg.header.id == CustomMsgTypes::ServerAccept) {
         std::cout << "Connessione al server avvenuta con succcesso!!\n";
     }
@@ -107,20 +114,20 @@ int main()
                 msg = c.Incoming().pop_front().msg;
                 if(msg.header.id == CustomMsgTypes::login){
                     c.log = true;
+                    c.user = us;
                     std::cout <<"Login avvenuto con successo\n";
                 } else
                     std::cout <<"Credenziali errate, riprova...\n";
             }
 
-            // rendo le i file locali temporaneamente invalidi e faccio un backup
-            std::filesystem::permissions("/Users/samuelejakupi/Desktop/directoryclient", std::filesystem::perms::owner_all, std::filesystem::perm_options::replace );
-            //std::filesystem::permissions("/Users/samuelejakupi/Desktop/directoryclient", std::filesystem::perms::none, std::filesystem::perm_options::replace );
+
+
             std::thread t1(sendallfcb, &c);
 
 
 
             q = 0;
-            while(q < n){
+            while(q < nx){
                 while (c.Incoming().empty()) c.Incoming().wait();
                 msg = c.Incoming().pop_front().msg;
                 if(msg.header.id == CustomMsgTypes::update)
@@ -146,13 +153,14 @@ int main()
 
                 if(status == FileStatus::modified || status ==FileStatus::created ){
                     std::filesystem::directory_entry pt(path_to_watch);
-                    std::string md =  md5(path_to_watch, pt.file_size());
+                    std::string md = md5(path_to_watch);
                     olc::net::message<CustomMsgTypes> fcb;
                     fcb.header.id =  CustomMsgTypes::check;
                     fcb << md;
                     std::string s;
                     s = pt.path().string().erase(0, pathr.length());
                     fcb << s;
+                    fcb << c.user;
                     c.Send(fcb);
                 }
                 else{
@@ -163,6 +171,7 @@ int main()
                         std::string s;
                         s = pt.path().string().erase(0, pathr.length());
                         fcb << s;
+                        fcb << c.user;
                         c.Send(fcb);
                     }
                     else
@@ -170,7 +179,7 @@ int main()
                 }
             });
 
-            std::filesystem::permissions("/Users/samuelejakupi/Desktop/directoryclient", std::filesystem::perms::owner_all, std::filesystem::perm_options::replace );
+
         }
 
 
