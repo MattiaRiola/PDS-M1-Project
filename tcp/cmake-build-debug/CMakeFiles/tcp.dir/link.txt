@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tcp.dir/SimpleServer.cpp.o  -o tcp  /opt/homebrew/opt/openssl@1.1/lib/libssl.dylib /opt/homebrew/opt/openssl@1.1/lib/libcrypto.dylib 
