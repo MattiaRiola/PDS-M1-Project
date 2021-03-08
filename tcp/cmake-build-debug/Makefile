@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp
+CMAKE_SOURCE_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmak
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,33 @@ SimpleServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp.dir/build.make CMakeFiles/tcp.dir/SimpleServer.cpp.s
 .PHONY : SimpleServer.cpp.s
 
+md5.o: md5.cpp.o
+
+.PHONY : md5.o
+
+# target to build an object file
+md5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp.dir/build.make CMakeFiles/tcp.dir/md5.cpp.o
+.PHONY : md5.cpp.o
+
+md5.i: md5.cpp.i
+
+.PHONY : md5.i
+
+# target to preprocess a source file
+md5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp.dir/build.make CMakeFiles/tcp.dir/md5.cpp.i
+.PHONY : md5.cpp.i
+
+md5.s: md5.cpp.s
+
+.PHONY : md5.s
+
+# target to generate assembly for a file
+md5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp.dir/build.make CMakeFiles/tcp.dir/md5.cpp.s
+.PHONY : md5.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... SimpleServer.o"
 	@echo "... SimpleServer.i"
 	@echo "... SimpleServer.s"
+	@echo "... md5.o"
+	@echo "... md5.i"
+	@echo "... md5.s"
 .PHONY : help
 
 

@@ -7,6 +7,8 @@
 #pragma once
 #include "net_common.h"
 
+
+
 namespace olc::net
     {
         ///[OLC_HEADERIFYIER] START "MESSAGE"
@@ -121,4 +123,8 @@ namespace olc::net
 
         ///[OLC_HEADERIFYIER] END "MESSAGE"
     }
+
+
+
+
 #endif //TCP_NET_MESSAGE_H

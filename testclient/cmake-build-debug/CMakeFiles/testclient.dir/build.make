@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/samuelejakupi/CLionProjects/testclient
+CMAKE_SOURCE_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testclient.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/testclient.dir/flags.make
 
 CMakeFiles/testclient.dir/SimpleClient.cpp.o: CMakeFiles/testclient.dir/flags.make
 CMakeFiles/testclient.dir/SimpleClient.cpp.o: ../SimpleClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testclient.dir/SimpleClient.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testclient.dir/SimpleClient.cpp.o -c /Users/samuelejakupi/CLionProjects/testclient/SimpleClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testclient.dir/SimpleClient.cpp.o"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testclient.dir/SimpleClient.cpp.o -c /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/SimpleClient.cpp
 
 CMakeFiles/testclient.dir/SimpleClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testclient.dir/SimpleClient.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/samuelejakupi/CLionProjects/testclient/SimpleClient.cpp > CMakeFiles/testclient.dir/SimpleClient.cpp.i
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/SimpleClient.cpp > CMakeFiles/testclient.dir/SimpleClient.cpp.i
 
 CMakeFiles/testclient.dir/SimpleClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testclient.dir/SimpleClient.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/samuelejakupi/CLionProjects/testclient/SimpleClient.cpp -o CMakeFiles/testclient.dir/SimpleClient.cpp.s
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/SimpleClient.cpp -o CMakeFiles/testclient.dir/SimpleClient.cpp.s
 
 CMakeFiles/testclient.dir/md5.cpp.o: CMakeFiles/testclient.dir/flags.make
 CMakeFiles/testclient.dir/md5.cpp.o: ../md5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testclient.dir/md5.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testclient.dir/md5.cpp.o -c /Users/samuelejakupi/CLionProjects/testclient/md5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testclient.dir/md5.cpp.o"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testclient.dir/md5.cpp.o -c /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/md5.cpp
 
 CMakeFiles/testclient.dir/md5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testclient.dir/md5.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/samuelejakupi/CLionProjects/testclient/md5.cpp > CMakeFiles/testclient.dir/md5.cpp.i
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/md5.cpp > CMakeFiles/testclient.dir/md5.cpp.i
 
 CMakeFiles/testclient.dir/md5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testclient.dir/md5.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/samuelejakupi/CLionProjects/testclient/md5.cpp -o CMakeFiles/testclient.dir/md5.cpp.s
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/md5.cpp -o CMakeFiles/testclient.dir/md5.cpp.s
 
 # Object files for target testclient
 testclient_OBJECTS = \
@@ -114,10 +114,10 @@ testclient_EXTERNAL_OBJECTS =
 testclient: CMakeFiles/testclient.dir/SimpleClient.cpp.o
 testclient: CMakeFiles/testclient.dir/md5.cpp.o
 testclient: CMakeFiles/testclient.dir/build.make
-testclient: /opt/homebrew/opt/openssl@1.1/lib/libssl.dylib
-testclient: /opt/homebrew/opt/openssl@1.1/lib/libcrypto.dylib
+testclient: /usr/local/opt/openssl/lib/libssl.dylib
+testclient: /usr/local/opt/openssl/lib/libcrypto.dylib
 testclient: CMakeFiles/testclient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable testclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable testclient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testclient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +130,6 @@ CMakeFiles/testclient.dir/clean:
 .PHONY : CMakeFiles/testclient.dir/clean
 
 CMakeFiles/testclient.dir/depend:
-	cd /Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/samuelejakupi/CLionProjects/testclient /Users/samuelejakupi/CLionProjects/testclient /Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug /Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug /Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/CMakeFiles/testclient.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/CMakeFiles/testclient.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/testclient.dir/depend
 

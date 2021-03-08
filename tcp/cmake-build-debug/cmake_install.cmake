@@ -1,4 +1,4 @@
-# Install script for directory: /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp
+# Install script for directory: /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

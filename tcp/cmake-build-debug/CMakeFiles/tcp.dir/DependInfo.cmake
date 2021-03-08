@@ -4,14 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp" "/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles/tcp.dir/SimpleServer.cpp.o"
+  "/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/SimpleServer.cpp" "/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles/tcp.dir/SimpleServer.cpp.o"
+  "/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/md5.cpp" "/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles/tcp.dir/md5.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/homebrew/include"
-  "/opt/homebrew/opt/openssl@1.1/include"
+  "/usr/local/include"
+  "/usr/local/opt/openssl/include"
   )
 
 # Targets to which this target links.

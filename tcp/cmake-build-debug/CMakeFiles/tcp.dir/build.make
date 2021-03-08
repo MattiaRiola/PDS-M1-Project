@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = "/Users/mattia/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp
+CMAKE_SOURCE_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tcp.dir/depend.make
@@ -79,30 +79,45 @@ include CMakeFiles/tcp.dir/flags.make
 
 CMakeFiles/tcp.dir/SimpleServer.cpp.o: CMakeFiles/tcp.dir/flags.make
 CMakeFiles/tcp.dir/SimpleServer.cpp.o: ../SimpleServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp.dir/SimpleServer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp.dir/SimpleServer.cpp.o -c /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp.dir/SimpleServer.cpp.o"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp.dir/SimpleServer.cpp.o -c /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/SimpleServer.cpp
 
 CMakeFiles/tcp.dir/SimpleServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp.dir/SimpleServer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp > CMakeFiles/tcp.dir/SimpleServer.cpp.i
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/SimpleServer.cpp > CMakeFiles/tcp.dir/SimpleServer.cpp.i
 
 CMakeFiles/tcp.dir/SimpleServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp.dir/SimpleServer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/SimpleServer.cpp -o CMakeFiles/tcp.dir/SimpleServer.cpp.s
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/SimpleServer.cpp -o CMakeFiles/tcp.dir/SimpleServer.cpp.s
+
+CMakeFiles/tcp.dir/md5.cpp.o: CMakeFiles/tcp.dir/flags.make
+CMakeFiles/tcp.dir/md5.cpp.o: ../md5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tcp.dir/md5.cpp.o"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp.dir/md5.cpp.o -c /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/md5.cpp
+
+CMakeFiles/tcp.dir/md5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp.dir/md5.cpp.i"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/md5.cpp > CMakeFiles/tcp.dir/md5.cpp.i
+
+CMakeFiles/tcp.dir/md5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp.dir/md5.cpp.s"
+	/LIbrary/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/md5.cpp -o CMakeFiles/tcp.dir/md5.cpp.s
 
 # Object files for target tcp
 tcp_OBJECTS = \
-"CMakeFiles/tcp.dir/SimpleServer.cpp.o"
+"CMakeFiles/tcp.dir/SimpleServer.cpp.o" \
+"CMakeFiles/tcp.dir/md5.cpp.o"
 
 # External object files for target tcp
 tcp_EXTERNAL_OBJECTS =
 
 tcp: CMakeFiles/tcp.dir/SimpleServer.cpp.o
+tcp: CMakeFiles/tcp.dir/md5.cpp.o
 tcp: CMakeFiles/tcp.dir/build.make
-tcp: /opt/homebrew/opt/openssl@1.1/lib/libssl.dylib
-tcp: /opt/homebrew/opt/openssl@1.1/lib/libcrypto.dylib
+tcp: /usr/local/opt/openssl/lib/libssl.dylib
+tcp: /usr/local/opt/openssl/lib/libcrypto.dylib
 tcp: CMakeFiles/tcp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tcp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tcp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tcp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +130,6 @@ CMakeFiles/tcp.dir/clean:
 .PHONY : CMakeFiles/tcp.dir/clean
 
 CMakeFiles/tcp.dir/depend:
-	cd /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug /Users/samuelejakupi/Desktop/progetto/PDS-M1-Project/tcp/cmake-build-debug/CMakeFiles/tcp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug /Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/tcp/cmake-build-debug/CMakeFiles/tcp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tcp.dir/depend
 

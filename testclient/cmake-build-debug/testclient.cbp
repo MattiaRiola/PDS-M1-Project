@@ -5,129 +5,127 @@
 		<Option title="testclient"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.75.0\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.75.0\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug"/>
+				<Option working_dir="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug"/>
+				<Option working_dir="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug"/>
+				<Option working_dir="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testclient">
-				<Option output="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/testclient" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug"/>
+				<Option output="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/testclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/opt/homebrew/include"/>
-					<Add directory="/opt/homebrew/opt/openssl@1.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/opt/openssl/include"/>
+					<Add directory="/LIbrary/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 testclient"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 testclient"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testclient/fast">
-				<Option output="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/testclient" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug"/>
+				<Option output="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/testclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/opt/homebrew/include"/>
-					<Add directory="/opt/homebrew/opt/openssl@1.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/opt/openssl/include"/>
+					<Add directory="/LIbrary/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 testclient/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/samuelejakupi/CLionProjects/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 testclient/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/FileWatcher.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/FileWatcher.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/SimpleClient.cpp">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/SimpleClient.cpp">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/md5.cpp">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/md5.cpp">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/md5.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/md5.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/net_client.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/net_client.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/net_common.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/net_common.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/net_connection.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/net_connection.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/net_message.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/net_message.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/net_tsqueue.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/net_tsqueue.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/olc_net.h">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/olc_net.h">
 			<Option target="testclient"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/CMakeLists.txt">
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/../../../../opt/homebrew/lib/cmake/Boost-1.75.0/BoostConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.75.0\"/>
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/../../../../../../usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/../../../../opt/homebrew/lib/cmake/Boost-1.75.0/BoostConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.75.0\"/>
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/../../../../../../usr/local/lib/cmake/Boost-1.75.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.75.0\"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/../../../../opt/homebrew/lib/cmake/boost_headers-1.75.0/boost_headers-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.75.0\"/>
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/../../../../../../usr/local/lib/cmake/boost_headers-1.75.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\"/>
 		</Unit>
-		<Unit filename="/Users/samuelejakupi/CLionProjects/testclient/../../../../opt/homebrew/lib/cmake/boost_headers-1.75.0/boost_headers-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.75.0\"/>
+		<Unit filename="/Users/mattia/MattiaWorkspace/CLionProjects/PDS-M1-Project-master/testclient/../../../../../../usr/local/lib/cmake/boost_headers-1.75.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.75.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
