@@ -1,1 +1,0 @@
-/LIbrary/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/testclient.dir/SimpleClient.cpp.o CMakeFiles/testclient.dir/md5.cpp.o  -o testclient  /usr/local/opt/openssl/lib/libssl.dylib /usr/local/opt/openssl/lib/libcrypto.dylib 
