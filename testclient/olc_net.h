@@ -26,7 +26,9 @@ enum class CustomMsgTypes : uint32_t
     update,
     loginDeny,
     check,
-    erase
+    erase,
+    final,
+    disconnetti
 };
 
 std::string pop_string(olc::net::message<CustomMsgTypes>* msg){

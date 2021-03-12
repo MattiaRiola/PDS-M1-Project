@@ -1,7 +1,7 @@
 #include <iostream>
 #include "olc_net.h"
 #include <boost/thread/thread.hpp>
-#include <openssl/md5.h>
+
 #include "FileWatcher.h"
 
 #define PATH_CLIENT "../clientdirectory" //Define del path del client
@@ -12,6 +12,7 @@
 
 int msg_debug_counter = 0;
 int n = 999999999, p, q;
+bool attivo = true, up;
 std::string pathr(PATH_CLIENT);
 
 /**
@@ -83,6 +84,7 @@ public:
     }
 
     void update(olc::net::message<CustomMsgTypes>* msg){
+        up = true;
         std::string path, path1;
         path = pop_string(msg);
         path1 = pathr + path ;
@@ -98,23 +100,30 @@ public:
             return;
         }
         pkg_counter = 1;
+        int pkg_number = 0;
         while ((bytes = fread (data, 1, 8192, inFile)) != 0){
+            if(pkg_number == 1000)
+                pkg_number = 0;
             olc::net::message<CustomMsgTypes> msg1;
             msg1.header.id = CustomMsgTypes::update;
             msg1 << data;
+            msg1 << pkg_number;
             msg1 << bytes;
             push_string(&msg1,path);
             push_string(&msg1,user);
             if(VERBOSE)
                 std::cout << "[update] : " << user <<  std::endl
-                << path1 << " -> sending package number : " << pkg_counter << std::endl;
+                << path1 << " -> sending package number : " << pkg_number << std::endl;
             Send(msg1);
             pkg_counter++;
+            pkg_number++;
         }
         pkg_counter = 1;
         fclose (inFile);
         q++;
+        up = false;
     }
+
 };
 
 void sendallfcb(CustomClient* c){
@@ -138,9 +147,25 @@ void sendallfcb(CustomClient* c){
     n = p;
 }
 
+void GestioneDisconnessione(CustomClient* c){
+    std::string s;
+    std::cout<<"\nInserisci <disc> per disconnetterti....\n";
+    while(attivo){
+        s ="";
+        std::cin >> s;
+        if(s == "disc")
+            attivo = !attivo;
+    }
+    olc::net::message<CustomMsgTypes> message;
+    message.header.id = CustomMsgTypes::disconnetti;
+    push_string(&message, c->user);
+    c->Send(message);
+
+}
 
 void attesa(CustomClient* c){
-    while(c->IsConnected()){
+
+    while(c->IsConnected() && (attivo || up)){
         while (c->Incoming().empty()) c->Incoming().wait();
         auto msg = c->Incoming().pop_front().msg;
         if(VERBOSE)
@@ -149,6 +174,8 @@ void attesa(CustomClient* c){
             c->update(&msg);
         }
     }
+    c->Disconnect();
+    std::cout<<"Disconnesso";
 }
 
 
@@ -222,12 +249,17 @@ int main()
                         q++;
             }
 
+            olc::net::message<CustomMsgTypes> message;
+            message.header.id = CustomMsgTypes::final;
+            message << q;
+            push_string(&message, c.user);
+            c.Send(message);
             t1.join();
             std::thread t2(attesa, &c);
+            std::thread t3(GestioneDisconnessione, &c);
             FileWatcher fw{PATH_CLIENT, std::chrono::milliseconds(3000)};
             // Start monitoring a folder for changes and (in case of changes)
             // run a user provided lambda function
-
             fw.start([&c] (const std::string& path_to_watch, FileStatus status) -> void {
                 // Process only regular files, all other file types are ignored
                 if(!std::filesystem::is_regular_file(std::filesystem::path(path_to_watch)) && status != FileStatus::erased) {
@@ -268,6 +300,7 @@ int main()
 
 
         }
+
 
 
         return 0;

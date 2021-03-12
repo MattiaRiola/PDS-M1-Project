@@ -1,3 +1,8 @@
 ProgettoM1/.DS_Store
 .DS_Store
 ProgettoM1/.DS_Store
+tcp/cmake-build-debug
+testclient/cmake-build-debug
+.idea
+tcp/database
+testclient/clientdirectory

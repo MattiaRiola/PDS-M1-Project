@@ -22,7 +22,9 @@ enum class CustomMsgTypes : uint32_t
         update,
         loginDeny,
         check,
-        erase
+        erase,
+        final,
+        disconnetti
 };
 
 
